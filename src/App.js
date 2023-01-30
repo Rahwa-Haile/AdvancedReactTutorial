@@ -4,11 +4,12 @@ import UseStateBasics from './tutorial/1-useState/2-useState-basics';
 import UseStateArray from './tutorial/1-useState/3-useState-array';
 import UseStateObject from './tutorial/1-useState/4-useState-object';
 import UseStateCounter from './tutorial/1-useState/5-useState-counter';
+import UseEffectBasics from './tutorial/2-useEffect/1-useEffect-basics';
 
 const App = () => {
   return (
     <div className="container">
-      <UseStateCounter/>
+      <UseEffectBasics/>
     </div>
   );
 }
