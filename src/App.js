@@ -6,11 +6,12 @@ import UseStateObject from './tutorial/1-useState/4-useState-object';
 import UseStateCounter from './tutorial/1-useState/5-useState-counter';
 import UseEffectBasics from './tutorial/2-useEffect/1-useEffect-basics';
 import UseEffectCleanup from './tutorial/2-useEffect/2-useEffect-cleanup';
+import UseEffectFetchData from './tutorial/2-useEffect/3-useEffect-fetch-data';
 
 const App = () => {
   return (
     <div className="container">
-      <UseEffectCleanup/>
+      <UseEffectFetchData/>
     </div>
   );
 }
