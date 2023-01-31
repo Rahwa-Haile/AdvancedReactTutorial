@@ -7,11 +7,12 @@ import UseStateCounter from './tutorial/1-useState/5-useState-counter';
 import UseEffectBasics from './tutorial/2-useEffect/1-useEffect-basics';
 import UseEffectCleanup from './tutorial/2-useEffect/2-useEffect-cleanup';
 import UseEffectFetchData from './tutorial/2-useEffect/3-useEffect-fetch-data';
+import MultipleReturns from './tutorial/3-conditionalRendering/1-multiple-returns';
 
 const App = () => {
   return (
     <div className="container">
-      <UseEffectFetchData/>
+      <MultipleReturns/>
     </div>
   );
 }
