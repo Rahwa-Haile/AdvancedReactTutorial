@@ -10,11 +10,12 @@ import UseEffectFetchData from './tutorial/2-useEffect/3-useEffect-fetch-data';
 import MultipleReturns from './tutorial/3-conditionalRendering/1-multiple-returns';
 import ShortCircuit from './tutorial/3-conditionalRendering/2-short-circuit';
 import ShowHide from './tutorial/3-conditionalRendering/3-show-hide';
+import ControlledInputs from './tutorial/4-forms/1-controlled-inputs'
 
 const App = () => {
   return (
     <div className="container">
-      <ShowHide/>
+      <ControlledInputs/>
     </div>
   );
 }
