@@ -9,11 +9,12 @@ import UseEffectCleanup from './tutorial/2-useEffect/2-useEffect-cleanup';
 import UseEffectFetchData from './tutorial/2-useEffect/3-useEffect-fetch-data';
 import MultipleReturns from './tutorial/3-conditionalRendering/1-multiple-returns';
 import ShortCircuit from './tutorial/3-conditionalRendering/2-short-circuit';
+import ShowHide from './tutorial/3-conditionalRendering/3-show-hide';
 
 const App = () => {
   return (
     <div className="container">
-      <ShortCircuit/>
+      <ShowHide/>
     </div>
   );
 }
