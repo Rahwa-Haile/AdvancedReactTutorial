@@ -11,11 +11,12 @@ import MultipleReturns from './tutorial/3-conditionalRendering/1-multiple-return
 import ShortCircuit from './tutorial/3-conditionalRendering/2-short-circuit';
 import ShowHide from './tutorial/3-conditionalRendering/3-show-hide';
 import ControlledInputs from './tutorial/4-forms/1-controlled-inputs'
+import MultipleInputs from './tutorial/4-forms/2-multiple-inputs';
 
 const App = () => {
   return (
     <div className="container">
-      <ControlledInputs/>
+      <MultipleInputs/>
     </div>
   );
 }
