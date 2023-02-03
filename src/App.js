@@ -13,11 +13,12 @@ import ShowHide from './tutorial/3-conditionalRendering/3-show-hide';
 import ControlledInputs from './tutorial/4-forms/1-controlled-inputs'
 import MultipleInputs from './tutorial/4-forms/2-multiple-inputs';
 import UseRefBasics from './tutorial/5-useRef/1-useRef-basics';
+import Index from './tutorial/6-useReducer'
 
 const App = () => {
   return (
     <div className="container">
-      <UseRefBasics/>
+      <Index/>
     </div>
   );
 }
