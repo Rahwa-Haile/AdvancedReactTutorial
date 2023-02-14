@@ -20,6 +20,11 @@ const Index = () => {
         modalContent: 'Please Enter a Value'
       }
     }
+    if(action.type==='CLOSE_MODAL'){
+      return{
+        ...state, isModalOpen: false
+      }
+    }
     throw new Error('No matching action type')
   }
 
@@ -41,9 +46,13 @@ const Index = () => {
       dispatch({type: 'NO_VALUE'})
     }
   };
+
+  const closeModal = ()=>{
+    dispatch({type: 'CLOSE_MODAL'})
+  }
   return (
     <>
-      {state.isModalOpen && <Modal modalContent={state.modalContent}/>}
+      {state.isModalOpen && <Modal modalContent={state.modalContent} closeModal={closeModal}/>}
       <form className="form" onSubmit={handleSubmit}>
         
           <input type="text" value={name} onChange={(e) => setName(e.target.value)} />
