@@ -1,32 +1,10 @@
 import React, { useState, useReducer } from "react";
 import Modal from "./modal";
 import { data } from "../../data";
+import {reducer} from './reducer'
 
 const Index = () => {
-  const reducer = (state, action)=>{
-    if(action.type==='ADD_ITEM'){
-      const newPeople = [...state.people, action.payload]
-      return {
-        ...state,
-        people: newPeople,
-        isModalOpen: true,
-        modalContent: 'item added'
-      }
-    }
-    if(action.type==='NO_VALUE'){
-      return{
-        ...state,
-        isModalOpen: true,
-        modalContent: 'Please Enter a Value'
-      }
-    }
-    if(action.type==='CLOSE_MODAL'){
-      return{
-        ...state, isModalOpen: false
-      }
-    }
-    throw new Error('No matching action type')
-  }
+  
 
   const defaultState = {
     people: [],
@@ -63,11 +41,12 @@ const Index = () => {
         return (
           <div className="item" key={person.id}>
             <h4>{person.name}</h4>
+            <button onClick={()=>dispatch({type: 'REMOVE_ITEM', payload: person.id})}>remove</button>
           </div>
-        );
+        )
       })}
     </>
-  );
-};
+  )
+}
 
 export default Index;
