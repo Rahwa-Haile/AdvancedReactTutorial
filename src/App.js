@@ -1,10 +1,10 @@
 import React from 'react'
-import Index from './tutorial/6-useReducer'
+import PropDrilling from './tutorial/7-prop-drilling/1-prop-drilling'
 
 const App = () => {
   return (
     <div className="container">
-      <Index/>
+      <PropDrilling/>
     </div>
   );
 }
