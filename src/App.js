@@ -1,10 +1,10 @@
 import React from 'react'
-import ContextAPI from './tutorial/8-useContext/1-context-api'
+import FetchExample from "./tutorial/9-custom-hooks/1-fetch-example";
 
 const App = () => {
   return (
     <div className="container">
-      <ContextAPI/>
+      <FetchExample/>
     </div>
   );
 }
