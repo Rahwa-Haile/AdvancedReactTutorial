@@ -1,10 +1,10 @@
 import React from 'react'
-import FetchExample from "./tutorial/9-custom-hooks/1-fetch-example";
+import Setup from './tutorial/10-prop-types';
 
 const App = () => {
   return (
     <div className="container">
-      <FetchExample/>
+      <Setup/>
     </div>
   );
 }
