@@ -10,10 +10,12 @@ import Person from './Person'
 const ReactRouterSetup = () => {
   return (
     <Router>
+      <Navbar/>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/people" element={<People />} />
+        <Route path="*" element={<Error />} />
       </Routes>
     </Router>
   );
