@@ -1,9 +1,24 @@
-import React from 'react'
+import React, { useState, useEffect } from "react";
+import { data } from "../../data";
+import { Link, useParams } from "react-router-dom";
 
 const Person = () => {
-  return (
-    <div>Person</div>
-  )
-}
+  const [name, setName] = useState("default name");
+  const { id } = useParams();
 
-export default Person
+  useEffect(()=>{
+    const newPerson = data.find((person) => person.id === Number(id));
+    setName(newPerson.name)
+  }, [])
+  
+  
+
+  return (
+    <div>
+      <h3>{name}</h3>
+      <Link to="/people">Back to people</Link>
+    </div>
+  );
+};
+
+export default Person;
